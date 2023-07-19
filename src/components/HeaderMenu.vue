@@ -3,7 +3,7 @@
        <el-header class="header">
        <h1 class="heading">Кафешки</h1>
        <el-menu class="menu"
-    default-active="/"
+    :default-active="`/${this.$route.path}`"
     mode="horizontal"
     router= true 
   >
@@ -20,6 +20,9 @@
      components: {
      },
      methods: {
+     },
+     mounted() {
+        console.log(this.$route.path)
      }
    }
    </script>

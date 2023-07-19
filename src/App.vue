@@ -9,9 +9,14 @@ export default {
   name: 'App',
   components: {
     HeaderMenu
-  }
+  },
+  async mounted() {
+    this.$store.dispatch('fetchCafe')
+  },
 }
+
 </script>
+
 
 <style>
 #app {

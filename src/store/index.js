@@ -19,6 +19,10 @@ export const store = createStore({
 
   },
   getters: {
+    randomeCafe: (state) => () => {
+      const cafeRandomIndex = Math.floor(Math.random() * state.cafe.length)
+      return state.cafe[cafeRandomIndex]
+    }
   },
   actions: {
     async fetchCafe({commit}) {

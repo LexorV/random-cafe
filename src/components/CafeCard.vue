@@ -1,5 +1,4 @@
 <template>
-    <li class="box-card">
         <el-card class="card" :body-style="{ padding: '0px' }">
             <h3>{{ cafe.name }}</h3>
             <p>Адрес: {{ cafe.address }} </p>
@@ -13,7 +12,6 @@
             
         </el-card>
 
-    </li>
 </template>
 
 <script>
@@ -34,13 +32,10 @@ export default {
 </script>
 
 <style scoped>
-.box-card {
-    width: 40%;
-
-}
 .card {
     padding: 10px;
     height: 800px;
+    width: 40%;
     box-sizing: border-box;
 }
 .card-picture {

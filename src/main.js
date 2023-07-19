@@ -1,13 +1,14 @@
 import { createApp } from 'vue'
 import ElementPlus from 'element-plus'
 import { createRouter, createWebHistory } from 'vue-router'
+import axios from 'axios'
+import VueAxios from 'vue-axios'
 import 'element-plus/dist/index.css'
 import ru from 'element-plus/dist/locale/ru.mjs'
 import App from './App.vue'
 import store from './store'
 import CafeFeed from '@/components/CafeFeed'
-import axios from 'axios'
-import VueAxios from 'vue-axios'
+import RandomCafe from '@/components/RandomCafe'
 
 
 
@@ -16,7 +17,9 @@ const router = createRouter({
     routes: [{
         path: '/', component: CafeFeed,
     },
-],
+    {
+      path: '/random', component: RandomCafe,}
+      ,],
     history: createWebHistory()
   })
 const app = createApp(App);
