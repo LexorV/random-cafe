@@ -1,14 +1,14 @@
 <template>
-  <CafeFeed msg="Welcome to Your Vue.js App"/>
+  <HeaderMenu />
+  <router-view />
 </template>
 
 <script>
-import CafeFeed from './components/CafeFeed'
-
+import HeaderMenu from '@/components/HeaderMenu.vue'
 export default {
   name: 'App',
   components: {
-    CafeFeed
+    HeaderMenu
   }
 }
 </script>

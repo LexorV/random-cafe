@@ -6,6 +6,8 @@ import ru from 'element-plus/dist/locale/ru.mjs'
 import App from './App.vue'
 import store from './store'
 import CafeFeed from '@/components/CafeFeed'
+import axios from 'axios'
+import VueAxios from 'vue-axios'
 
 
 
@@ -23,4 +25,5 @@ app.use(ElementPlus, {
   })
 app.use(router)
 app.use(store)
+app.use(VueAxios, axios)
 app.mount('#app')
