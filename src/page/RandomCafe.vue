@@ -23,12 +23,12 @@ export default {
             'cafe'
         ]),
         ...mapGetters([
-            'randomeCafe',
+            'randomCafe',
         ]),
   },
   methods: {
     startRandom() {
-        this.cafe = this.randomeCafe()
+        this.cafe = this.randomCafe()
     }
   }
 }

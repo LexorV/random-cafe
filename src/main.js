@@ -7,8 +7,9 @@ import 'element-plus/dist/index.css'
 import ru from 'element-plus/dist/locale/ru.mjs'
 import App from './App.vue'
 import store from './store'
-import CafeFeed from '@/components/CafeFeed'
-import RandomCafe from '@/components/RandomCafe'
+import CafeFeed from '@/page/CafeFeed'
+import RandomCafe from '@/page/RandomCafe'
+import OneCafe from '@/page/OneCafe'
 
 
 
@@ -18,8 +19,12 @@ const router = createRouter({
         path: '/', component: CafeFeed,
     },
     {
-      path: '/random', component: RandomCafe,}
-      ,],
+      path: '/random', component: RandomCafe,
+  },
+  {
+    path: '/cafe/:id', component: OneCafe,
+},
+],
     history: createWebHistory()
   })
 const app = createApp(App);

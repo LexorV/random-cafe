@@ -1,6 +1,6 @@
 <template>
   <main>
-    <div class="list-cafe" v-loading="this.$store.state.loading"> 
+    <div class="list-cafe" v-loading="$store.state.loading"> 
       <CafeCard v-for="cafe in $store.state.cafe"
       :key="cafe.id"
       :cafe="cafe"
