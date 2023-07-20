@@ -1,24 +1,17 @@
 # random-cafe
 
-## Project setup
+## установка зависимостей
 ```
 npm install
 ```
 
-### Compiles and hot-reloads for development
+### Запуск в режиме локального сервера 
 ```
 npm run serve
+Веб-приложение будет доступоно по адресу: http://localhost:8081
+```
+### Demo
+```
+https://random-cafe.lex-v.ru
 ```
 
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
