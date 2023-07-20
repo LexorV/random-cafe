@@ -49,11 +49,14 @@ export default {
 </script>
 
 <style scoped>
+p {
+    margin: 10px 0;
+}
 .card {
     padding: 10px;
     display: flex;
     flex-direction: column;
-    gap: 5px;
+    gap: 10px;
     height: 800px;
     width: 40%;
     box-sizing: border-box;
@@ -66,5 +69,27 @@ export default {
     height: 400px;
     object-fit: contain;
     overflow: hidden;
+}
+@media screen and (max-width: 1100px) {
+    .card-picture {
+        height: 300px;
+    }
+    .card {
+        height: 700px;
+    }
+}
+@media screen and (max-width: 700px) {
+    .card{
+        width: 90%;
+        height: 650px;
+    }
+    .card-picture {
+        height: 200px;
+    }
+}
+@media screen and (max-width: 400px) {
+    .card{
+        height: 600px;
+    }
 }
 </style>

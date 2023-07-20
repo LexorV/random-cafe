@@ -35,6 +35,12 @@ gap: 10px;
 flex-wrap: wrap;
 justify-content: center;
 }
+@media screen and (max-width: 700px) {
+  .list-cafe{
+       flex-direction: column;
+       align-items: center;
+    }
+}
 ul {
   list-style-type: none;
   padding: 0;
